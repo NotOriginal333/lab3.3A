@@ -3,7 +3,6 @@
 class MoneyO :
     public Money
 {
-private:
 	double total;
 
 	int fiveHundred;

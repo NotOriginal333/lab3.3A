@@ -7,7 +7,6 @@ using namespace std;
 
 class Money
 {
-private:
 	double total;
 
 	int fiveHundred;

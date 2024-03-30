@@ -4,6 +4,8 @@
 #include <string>
 #include <sstream>
 
+using namespace std;
+
 int MoneyC::setFiveHundred(int n) {
     if (n < 0) {
         std::cerr << "Error: Number of 500 hryvnia banknotes cannot be negative.\n";
@@ -212,12 +214,6 @@ std::string MoneyC::displayTotal() const {
 
     sout << "Total amount: " << totalStr;
     return sout.str();
-}
-
-ostream& operator << (ostream& out, const MoneyC& r)
-{
-    out << string(r);
-    return out;
 }
 
 MoneyC& MoneyC::operator ++() {
