@@ -30,7 +30,7 @@ public:
 	Money();
 	Money(int, int, int, int, int, int, int, int, int, int, int, int, int, int, int);
 	Money(const Money& m);
-	~Money();
+	~Money() { };
 
 	operator string() const;
 

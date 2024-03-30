@@ -317,3 +317,24 @@ MoneyO::MoneyO(const MoneyO& m) {
     twoCoins = m.twoCoins;
     oneCoin = m.oneCoin;
 }
+
+string MoneyO::toString() const {
+    std::stringstream sout;
+    sout << "500 uah: " << fiveHundred << ", ";
+    sout << "200 uah: " << twoHundred << ", ";
+    sout << "100 uah: " << oneHundred << ", ";
+    sout << "50 uah: " << fifty << ", ";
+    sout << "20 uah: " << twenty << ", ";
+    sout << "10 uah: " << ten << ", ";
+    sout << "5 uah: " << five << ", ";
+    sout << "2 uah: " << two << ", ";
+    sout << "1 uah: " << one << ", ";
+    sout << "50 kopiyka: " << fiftyCoins << ", ";
+    sout << "25 kopiyka: " << twentyFiveCoins << ", ";
+    sout << "10 kopiyka: " << tenCoins << ", ";
+    sout << "5 kopiyka: " << fiveCoins << ", ";
+    sout << "2 kopiyka: " << twoCoins << ", ";
+    sout << "1 kopiyka: " << oneCoin;
+
+    return sout.str();
+}

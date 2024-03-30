@@ -31,7 +31,7 @@ public:
 	MoneyC();
 	MoneyC(const Money&);
 	MoneyC(const MoneyC& m);
-	~MoneyC();
+	~MoneyC() { };
 
 	int setFiveHundred(int n);
 	int setTwoHundred(int n);

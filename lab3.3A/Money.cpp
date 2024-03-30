@@ -139,8 +139,6 @@ int Money::setOneCoin(int c) {
     return 0;
 }
 
-Money::~Money() { }
-
 Money::Money(const Money& m) {
     fiveHundred = m.fiveHundred;
     twoHundred = m.twoHundred;
